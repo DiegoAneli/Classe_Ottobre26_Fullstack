@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="giorgio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/navbars/navbar-1/assets/css/navbar-1.css">
+  </head>
+  <body>
+<!-- Bar Superiore (Navbar) -->
+    <!-- Div contenitore principale centrato -->
+<div class="centered-wrapper">
+    
+    <!-- Riga superiore: Logo/Menu a sinistra e Azioni a destra -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap">
+        
+        <!-- Blocco Sinistra: Logo + Voci di navigazione principali -->
+        <div class="d-flex align-items-center gap-4">
+            
+            <!-- Logo -->
+            <a class="navbar-brand p-0 m-0" href="#">
+                <div class="border border-dark px-2 py-1 fw-bold fs-4 text-black" style="letter-spacing: 2px;">
+                    4AD
+                </div>
+            </a>
+
+            <!-- Voci di Menu -->
+            <!--<ul class="nav align-items-center gap-4 m-0">
+            
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle" href="#" id="artistsDropdown">
+                        ARTISTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="artistsDropdown">
+                        <li><a class="dropdown-item" href="#">CURRENT ARTISTS</a></li>
+                        <li><a class="dropdown-item" href="#">CATALOGUE ARTISTS</a></li>
+                    </ul>-->
+
+                <ul class="d-flex flex-row gap-3 justify-content-end flex-grow-1 mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#!">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#!" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ARTISTS</a>
+                        <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="accountDropdown">
+                        <li><a class="dropdown-item" href="#!">CURRENT ARTISTS</a></li>
+                        <li><a class="dropdown-item" href="#!">CATALOGUE ARTISTS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-nav-link" href="#">New Releases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-nav-link" href="#">Merchandise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-nav-link" href="#">Newsletter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Blocco Destra: Accedi e Carrello -->
+        <ul class="nav align-items-center gap-4 m-0">
+            <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#">Accedi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#">Carrello</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Sezione Inferiore: Barra di ricerca -->
+    <div class="search-section">
+        <div class="d-flex align-items-center">
+            <i class="bi bi-search text-secondary fs-6 me-2"></i>
+            <input type="text" class="form-control search-input" placeholder="Cerca">
+        </div>
+    </div>
+    
+    
+    <section class="my-5 overflow-hidden">
+        <div id="heroCarousel" class="carousel slide carousel-fade custom-carousel-height2 " data-bs-ride="carousel">
+            
+            <!-- Indicatori in basso (i pallini/trattini per cambiare slide) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                
+                <!-- Slide 1 -->
+                <div class="carousel-item custom-carousel-height active" data-bs-interval="4000">
+                    <img src="images.jfif" class="d-block w-100 h-100" alt="Natura">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded">
+                        <h3>Titolo Prima Slide</h3>
+                        <p>Descrizione della prima immagine. Puoi aggiungere testo, link o pulsanti.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Scopri di più</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://picsum.photos/id/1015/1200/500" class="d-block w-100 h-100 object-fit-cover" alt="Paesaggio">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded">
+                        <h3>Secondo Titolo</h3>
+                        <p>Un altro testo sovrapposto con informazioni utili o una call to action.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://picsum.photos/id/1015/1200/500" class="d-block w-100 h-100 object-fit-cover" alt="Monolord">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded">
+                        <h3 class="text-center">Terzo Titolo</h3>
+                        <p>Personalizza il contenuto come preferisci per ogni singola diapositiva.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controlli Avanti / Indietro -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Precedente</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Successivo</span>
+            </button>
+        </div>
+    </section>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+        
+    </body>
+
+
+</html>

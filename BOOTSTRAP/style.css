@@ -1,0 +1,282 @@
+.hero-section {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    min-height: 820px;
+}
+
+
+.btn_pers {
+
+
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+
+}
+
+.btn_pers:hover {
+
+
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.cnt_image {
+
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.cnt_image img {
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;       
+}
+
+.cnt_div {
+
+    width: 300px;
+    height: 150px;
+}
+
+
+
+/*CODICE CSS extra*/
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 14rem 0;
+}
+
+.hero-section_carousel {
+    
+    padding: 0rem 0;
+    background-color: white;
+
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.hero-image {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/*MEDIA QUERY*/
+@media (min-width: 575.98px) {
+ .footer-title::after {
+    display: none;
+}
+
+
+}
+
+@media (max-width: 767.98px) {
+ .footer-title::after {
+    display: none;
+}
+}
+
+
+@media (min-width: 991.98px) {
+
+}
+
+
+
+/*container card*/
+
+.card-sleek {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-left: 20px;
+}
+
+.card-sleek:hover {
+    transform: translateY(-5px);
+}
+
+.card-sleek .card-body {
+    padding: 2rem;
+}
+
+.card-sleek .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-sleek .card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card-sleek .btn-sleek {
+    background-color: #fff;
+    color: #667eea;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card-sleek .btn-sleek:hover {
+    background-color: #667eea;
+    color: #fff;
+}
+
+.cnt_card {
+
+    width: 100wh;
+    background-color: #f8f9fa;
+    padding: 20rem 0;
+    margin-left: 20px;
+}
+
+
+/*contact section*/
+
+
+.contact-section {
+    
+    padding: 8rem 0;
+    border-top: 1px solid black;
+
+}
+
+.contact-map {
+    height: 400px;
+    width: 100%;
+    border: none;
+}
+
+.form-feedback {
+    color: #dc3545;
+    margin-top: 0.5rem;
+}
+
+.form-success {
+    color: #28a745;
+}
+
+
+
+/*footer*/
+
+
+.footer {
+    background: linear-gradient(145deg, #1a1c23, #242730);
+    color: #ffffff;
+}
+        
+.footer-title {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+        
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 30px;
+    height: 2px;
+    background: #6c5ce7;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #b4b6bb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #6c5ce7;
+    transform: translateY(-3px);
+}
+
+.newsletter-input {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #ffffff;
+}
+
+.newsletter-input:focus {
+    background: rgba(255,255,255,0.15);
+    border-color: #6c5ce7;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.btn-subscribe {
+    background: #6c5ce7;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background: #5a4bd1;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    background: rgba(0,0,0,0.2);
+}
+
+.footer-bottom a {
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}        
+

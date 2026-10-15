@@ -1,0 +1,62 @@
+POWERSHELL COMMANDS
+
+- Come capire se ho un software installato sul pc :
+
+    nomesoftware --version
+    es.: git --version , node --version etc...
+
+- Clear -> pulisce il terminale
+
+- Freccia su -> richiamo degli ultimi comandi digitati nel terminale
+
+- Copiare dal terminale : sleezionate il testo e fate cntrl+c
+
+- Incollare script o qualcosa nel terminale : Tasto destro
+
+- Questa si chiama "directory" o "path" "LA CARTELLA" ->  C:\WINDOWS\system32>
+
+- Come entrare con powershell dentro ad una cartella : 
+
+    vi copiate il percorso della cartella e lo incollate con tasto destro dopo il comando "cd"
+
+    cd significa "change directory"
+
+    quindi : cd percorso
+
+esempio :
+
+    PS C:\WINDOWS\system32> cd C:\Users\Administrator\Desktop\CLASSE_OTTOBRE_26
+
+    Invio per entrare
+
+    diventerà -> PS C:\Users\Administrator\Desktop\CLASSE_OTTOBRE_26>
+
+
+
+- Per salire di livello quindi andare nella cartella superiore o contenitore 
+
+    comando -> cd..   
+    
+- Per entrare quindi nella cartella interna, 
+
+    cd + TAB (CHE CI SUGGERISCE SE CLICCATO PIU VOLTE LE CARTELLE DISPONIBILI)
+
+    Scelta la cartella con invio entraremo entro alla cartella scelta
+
+
+
+- Per vedere a schermo il contenuto della cartella : ls
+
+- Per creare cartelle -> mkdir (make directory) + nome
+
+    es.: mkdir TEST
+
+- Per creare nuovo file ad esempio index.html all interno della cartella
+
+    ni (new item) + nome file 
+
+    es.: ni index.html 
+
+    comando alternativo per sistema Linux -> touch index.html
+
+- Per cancellare "rm nomefile"
