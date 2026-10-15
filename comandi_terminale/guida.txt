@@ -60,3 +60,6 @@ esempio :
     comando alternativo per sistema Linux -> touch index.html
 
 - Per cancellare "rm nomefile"
+
+
+- Con "git status" riusciamoa a capire se la repo è già stata inizializzata con git
